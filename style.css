@@ -11,10 +11,6 @@
     --secondary-bg: white;
 
     --outline-color: black;
-
-
-
-
 }
 
 * {
@@ -34,11 +30,19 @@ body {
     background-color: var(--primary-color);
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 
-p {margin: 0; padding: 0 }
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: .03rem;
+    line-height: 1.3rem;
+    
+ }
 
 .text-center {
     text-align: center;
@@ -73,11 +77,11 @@ p {margin: 0; padding: 0 }
 }
 
 .small-fontsize {
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .regular-fontsize {
-    font-size: 4rem;
+    font-size: 1.1rem;;
 }
 
 .large-fontsize {
@@ -124,15 +128,14 @@ a:visited {
 
 
 .column {
-    max-width: 1200px;
+    max-width: 1539px;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+
 }
 
 .sideBar {
     flex-grow: .4;
-  
 }
 
 .column > * {
@@ -160,7 +163,7 @@ a:visited {
 }
 
 .card {
-    padding: 0.5rem;
+    padding: .9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,6 +212,17 @@ button:active {
     flex-direction: column;
 }
 
+.inlineflex {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+/* menu segment */
 
 
 
