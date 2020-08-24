@@ -10,6 +10,8 @@
     --secondary-color: black;
     --secondary-bg: white;
 
+    --outline-color: black;
+
 
 
 
@@ -58,8 +60,6 @@ p {margin: 0; padding: 0 }
     background-color: var(--secondary-bg);
 }
 
-
-
 .heading-font {
     font-family: "Anton";
 }
@@ -107,10 +107,6 @@ a:visited {
     color: inherit;
 }
 
-.gap {
-    margin:1rem;
-}
-
 .center-content {
     display: flex;
     flex-direction: column;
@@ -122,6 +118,8 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: .1em;
+    color: var(--secondary-color)
 }
 
 
@@ -132,20 +130,14 @@ a:visited {
     gap: 2rem;
 }
 
-.card {
-    padding: 0.25em;
-
-}
-
 .sideBar {
     flex-grow: .4;
-    min-height: 600px;
+  
 }
 
 .column > * {
     flex-basis: calc(calc(725px - 100%)*999);
     flex-grow: 1;
-    
 }
 
 .cover-image {
@@ -153,17 +145,25 @@ a:visited {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    max-height: 369px;
     align-items: center;
 }
 
 .cover-image img {
-    width: 100%;
+    width: 170%;
     height: auto;
     object-fit: fill;
 }
 
 .card * + * {
   margin-top: 1rem;
+}
+
+.card {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -200,7 +200,14 @@ button:active {
     transform: scale(0.99);
 }
 
+.outline {
+    outline: 1px solid var(--outline-color);
+}
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
