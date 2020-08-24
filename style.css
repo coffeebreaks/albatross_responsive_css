@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+:root {
+    --primary-color: white;
+    --primary-bg: black;
+
+    --secondary-color: black;
+    --secondary-bg: white;
+
+
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.body-wrapper {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+p {margin: 0; padding: 0 }
+
+.text-center {
+    text-align: center;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.primary-bg {
+    background-color: var(--primary-bg) ;
+}
+
+.secondary-color {
+    color: var(--secondary-color)
+}
+
+.secondary-bg {
+    background-color: var(--secondary-bg);
+}
+
+
+
+.heading-font {
+    font-family: "Anton";
+}
+
+.primary-font {
+    font-family: "Montserrat";
+}
+
+.secondary-font {
+   font-family: "Work Sans";
+}
+
+.small-fontsize {
+    font-size: 1rem;
+}
+
+.regular-fontsize {
+    font-size: 4rem;
+}
+
+.large-fontsize {
+    font-size: 7rem;
+}
+
+.no-decoration {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+a:hover {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+a:visited {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.gap {
+    margin:1rem;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.column {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    padding: 0.25em;
+
+}
+
+.sideBar {
+    flex-grow: .4;
+    min-height: 600px;
+}
+
+.column > * {
+    flex-basis: calc(calc(725px - 100%)*999);
+    flex-grow: 1;
+    
+}
+
+.cover-image {
+    background: red;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.card * + * {
+  margin-top: 1rem;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                color 250ms ease-in-out,
+                transform 150ms ease;           
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.primary-hover:hover {
+    background-color: rgb(77, 150, 219);
+    color: white;
+}
+
+
+button:focus {
+    outline: 1px solid rgb(31, 128, 255);
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+
+
+
+
