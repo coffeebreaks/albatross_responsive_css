@@ -153,9 +153,9 @@ a:visited {
 }
 
 .cover-image img {
-    width: 170%;
-    height: auto;
-    object-fit: fill;
+    object-fit: cover;
+    height: 100%;
+    width: 140%;
 }
 
 .card * + * {
@@ -225,4 +225,10 @@ button:active {
 /* menu segment */
 
 
+.hero {
+ 
+}
 
+.expand-vertical {
+    max-height: 100%;
+}
